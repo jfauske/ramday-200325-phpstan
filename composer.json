@@ -1,0 +1,33 @@
+{
+  "name": "ramday/200325-phpstan",
+  "description": "PHPStan introduction",
+  "homepage": "https://bitbucket.org/ramsalt/ramday-200325-phpstan",
+  "authors": [
+    {
+      "name": "Jørn Fauske",
+      "email": "jorn@ramsalt.com"
+    }
+  ],
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "\\Ramday\\Phpstan\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "squizlabs/php_codesniffer": "^3.11",
+    "nikic/php-parser": "^5.4"
+  }
+}
