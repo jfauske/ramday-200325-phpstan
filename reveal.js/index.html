@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h4>Ramday 20.03.2025 - PHPStan</h4>
+					<ul>
+						<li class="fragment">What is PHPStan?</li>
+						<li class="fragment">How PHPStan works</li>
+						<li class="fragment">Basic installation</li>
+						<li class="fragment">Some basic examples</li>
+						<li class="fragment">Introducing PHPStan in your projects</li>
+						<li class="fragment">Use in Ramsalt projects</li>
+						<li class="fragment">Q/A</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>How PHPStan works</h4>
+				</section>
+				<section>
+					<h4>Basic installation and use</h4>
+							<pre class="code-wrapper" data-id="code-animation">
+								<code class="hljs javascript language-shell" data-highlighted="yes" data-line-numbers="no">$ composer require --dev phpstan/phpstan</code>
+							</pre>
+							<pre class="code-wrapper" data-id="code-animation">
+								<code class="hljs javascript language-shell" data-highlighted="yes" data-line-numbers="no">$ vendor/bin/phpstan analyse -l 5 my-script.php</code>
+							</pre>
+
+				</section>
+				<section>
+					<h4>Some examples</h4>
+					<ul>
+						<li class="fragment">Level 0</li>
+						<li class="fragment">Level 1</li>
+						<li class="fragment">Level 5</li>
+						<li class="fragment">Level 8</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Introducing PHPStan in your projects</h4>
+					<pre class="code-wrapper" data-id="code-animation" style="font-size: 0.40em;">
+						<code class="hljs javascript language-shell" data-highlighted="yes" data-line-numbers="no">$ composer config --global allow-plugins.phpstan/extension-installer true
+$ composer require --dev phpstan/phpstan \
+    phpstan/extension-installer \
+    mglaman/phpstan-drupal \
+    phpstan/phpstan-deprecation-rules
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h4>Use in Ramsalt projects</h4>
+				</section>
+				<section>
+					<h4>Questions?</h4>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
