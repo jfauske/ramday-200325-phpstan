@@ -28,13 +28,13 @@ I will share a little bit about how PHPStan is already being used in some Ramsal
 
 PHPStan uses the phpparser library to parse php files and build an Abstract Syntax Tree (AST).
 
-From this, PHPStan will infer types from function signatures, docblocks and code usage.
+From this, PHPStan is able to infer a lot of information like for example types from function signatures, docblocks and code usage.
 It will then apply a set of predefined rules to detect common issues.
 Those may be things like accessing undefined variables, invalid function calls or incompatible argument types used.
 
-An Abstract Syntax Tree (AST) is a tree representation of the structure, breaking down the source code into its fundamental syntactic components.
+An Abstract Syntax Tree (AST) is a tree representation of the application structure, breaking down the source code into its fundamental syntactic components.
 
-Switch to an IDE and se how that may look.
+Switch to an IDE and se how that may look from a simple example.
 
 An example:
 ```php
